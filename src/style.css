@@ -1,4 +1,7 @@
 /* Main CSS */
+/* The background
+including color and alignment of container
+*/
 body {
     font-family: 'Poppins', sans-serif;
     background-color: lightgrey;
@@ -8,7 +11,10 @@ body {
     justify-content: center;
     min-height: 100vh;
 }
-
+/*
+The main holder of all functions
+can control main color and display of notes
+ */
 #container {
     background-color: #fff;
     border-radius: 8px;
@@ -23,6 +29,10 @@ body {
     justify-content: center;
     overflow-y: scroll;
 }
+/*
+new feature
+task bar for creating notes and later functions
+ */
 #top-bar{
     display: flex;
     align-items: center;
@@ -31,7 +41,6 @@ body {
     padding: 10px 20px;
     border-bottom: 2px solid #ddd;
 }
-
 #list-header {
     display: flex;
     flex-direction: row;
@@ -39,20 +48,10 @@ body {
     justify-content: flex-start;
     gap: 10px;
 }
-
-.blankDiv {
-    background-color: #fff;
-    border: none;
-    padding: 20px;
-    border-radius: 8px;
-    height: 200px;
-    width: 200px;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+/*
+Our create note btn
+control size, color and placement
+ */
 #addNoteDiv {
     display: flex;
     align-items: center;
@@ -64,12 +63,18 @@ body {
     cursor: pointer;
     transition: 0.3s;
 }
-
+/*
+hover feature for better UI
+ */
 #addNoteDiv:hover {
     transition: 0.25s;
     background-color: #f1f1f1;
 }
-
+/*
+addnoteDiv i, span, icon
+control text font and size
+and icon adjustments
+ */
 #addNoteDiv i {
     font-size: 20px;
     color: gainsboro;
@@ -99,14 +104,14 @@ ul {
     flex-wrap: wrap;
     text-align: center;
 }
-
+/*main sticky note color, size, placement and display*/
 li {
     background-color: #fff385;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between; /* Added to align buttons to the right */
+    justify-content: space-between;
     height: 200px;
     width: 200px;
     margin: 10px;
@@ -115,7 +120,10 @@ li {
     -9px -9px 18px #ffffff;
     overflow: hidden;
 }
-
+/*
+text in sticky note
+controlling overflow and text UI
+ */
 li span {
     font-size: 12px;
     word-wrap: break-word;
@@ -124,7 +132,10 @@ li span {
     max-width: 100%;
 
 }
-
+/*
+buttons on sticky note for easy use
+controlls placement and size
+ */
 #editBtn,
 #deleteBtn {
     background-color: #c6aaff;
@@ -137,19 +148,17 @@ li span {
     font-size: 12px;
     width: 60px;
 }
-
+/*specific features to editbtn*/
 #editBtn {
     background-color: gainsboro;
 }
-
-#deleteBtn:hover {
-    background-color: #8c53ff;
-}
-
 #editBtn:hover {
     background-color: gray;
 }
-
+/*hover feature for delete btn*/
+#deleteBtn:hover {
+    background-color: #8c53ff;
+}
 
 /* Create Note Popup CSS */
 #popupContainer {
@@ -170,7 +179,7 @@ li span {
     align-items: center;
     justify-content: center;
 }
-
+/* specs of editing note area */
 textarea {
     width: 300px;
     height: 200px;
@@ -184,7 +193,7 @@ textarea {
 #btn-container {
     display: flex;
 }
-
+/* placement and size of our btns on popup*/
 #submitBtn, #closeBtn {
     width: 100px;
     background-color: #8c53ff;
@@ -196,12 +205,10 @@ textarea {
     cursor: pointer;
     margin: 10px;
 }
-
+/* adjust color of close button*/
 #closeBtn {
     background-color: gainsboro;
 }
-
-
 /* Editing Popup CSS */
 #editing-container {
     position: absolute;
